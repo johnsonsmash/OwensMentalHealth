@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Behind the Shot: Gaffer District lights after rain | Owens</title>
+  <meta name="description" content="Behind the scenes on a rainy‑night photo—and what photography routines teach us about regulating the nervous system." />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script> tailwind.config = { theme: { extend: { colors: { brand: {50:'#f7fbfa',100:'#eaf7f4',200:'#c9eee3',300:'#9dddc9',400:'#57c0a1',500:'#2ea685',600:'#20876c',700:'#1a6d59',800:'#165747',900:'#12483b'}, ink:'#0f172a'} } } } </script>
+  <style> html{scroll-behavior:smooth} </style>
+</head>
+<body class="bg-white text-ink antialiased">
+  <header class="border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify_between">
+      <a href="/" class="flex items-center gap-2"><img src="/images/logo.png" class="w-8 h-8 rounded-xl object-cover" alt="Owens" onerror="this.style.display='none'"/><span class="font-semibold">Owens Mental Health & Wellness</span></a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm"><a href="/">Home</a><a href="/blog/index.html">Blog</a><a href="/index.html#contact" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Contact</a></nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="h-[36vh] md:h-[48vh] w-full overflow-hidden">
+      <img src="/images/corning3.jpg" alt="Gaffer District lights after rain" class="w-full h-full object-cover will-change-transform" data-parallax data-speed="0.18" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="-mt-16 md:-mt-20 relative bg-white/90 backdrop-blur rounded-2xl p-5 md:p-6 shadow-lg border border-slate-100">
+        <div class="text-xs text-slate-500">Oct 2025 · Behind the Scenes</div>
+        <h1 class="mt-1 text-2xl md:text-3xl font-extrabold">Behind the Shot: Gaffer District lights after rain</h1>
+        <p class="mt-2 text-slate-700">The gear, the settings, and the lesson: repetition + attention can be regulation. Photography is exposure therapy for overwhelm—one frame at a time.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-3xl mx-auto px-4 py-10 prose prose-slate">
+    <h2>Gear & settings (for the curious)</h2>
+    <ul>
+      <li>Camera: phone or mirrorless—what matters is that you actually take the shot.</li>
+      <li>Shutter: ~1/30s handheld; brace on a post if you’re slower.</li>
+      <li>ISO: as low as you can get away with; noise isn’t the enemy, perfectionism is.</li>
+    </ul>
+    <figure class="not-prose relative">
+      <img src="/images/corning3.jpg" alt="Gaffer District lights" class="w-full rounded-xl border border-slate-200"/>
+      <figcaption class="text-xs text-slate-500 mt-2">Gaffer District lights after rain · <span class="opacity-60">© Owens</span></figcaption>
+    </figure>
+    <h3>What this has to do with mental health</h3>
+    <p>Showing up for a small creative ritual turns down threat and turns up agency. It’s not treatment—but it’s part of a treatment life.</p>
+    <h3>Try this</h3>
+    <ol>
+      <li>Pick one block. Photograph it in three kinds of weather this month.</li>
+      <li>One sentence per photo about how the scene felt. That’s your check‑in.</li>
+      <li>Share with a friend or keep it private—either way, you showed up.</li>
+    </ol>
+  </main>
+
+  <nav class="max-w-3xl mx-auto px-4 pb-12 flex items-center justify-between text-sm">
+    <a href="/blog/market-street-at-dusk.html" class="underline-offset-2 hover:underline">← Previous: Market Street at Dusk</a>
+    <a href="/blog/index.html" class="underline-offset-2 hover:underline">Back to Blog</a>
+  </nav>
+
+  <footer class="py-10 border-t border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-slate-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+      <p>© <span id="year"></span> Owens Mental Health & Wellness. All rights reserved.</p>
+      <nav class="flex gap-4"><a href="/">Home</a><a href="/index.html#contact">Contact</a></nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){ const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches; if(reduce) return; const img=document.querySelector('[data-parallax]'); if(!img) return; let t=false; function u(){ const r=img.getBoundingClientRect(); img.style.transform=`translateY(${r.top*0.18}px)`; t=false;} function on(){ if(!t){ requestAnimationFrame(u); t=true;} } window.addEventListener('scroll', on,{passive:true}); window.addEventListener('resize', on); on(); })();
+  </script>
+</body>
+</html>

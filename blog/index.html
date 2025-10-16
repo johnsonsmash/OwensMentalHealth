@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | Owens Mental Health & Wellness — Corning, NY</title>
+  <meta name="description" content="Updates, local scenes, and practical mental health guides from Owens Mental Health & Wellness in Corning, NY." />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: {50:'#f7fbfa',100:'#eaf7f4',200:'#c9eee3',300:'#9dddc9',400:'#57c0a1',500:'#2ea685',600:'#20876c',700:'#1a6d59',800:'#165747',900:'#12483b'}, ink:'#0f172a'} } } }
+  </script>
+  <style> html { scroll-behavior: smooth } </style>
+</head>
+<body class="bg-white text-ink antialiased">
+  <header class="border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <img src="/images/logo.png" alt="Owens Mental Health & Wellness" class="w-8 h-8 rounded-xl object-cover" onerror="this.style.display='none'"/>
+        <span class="font-semibold">Owens Mental Health & Wellness</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="/">Home</a>
+        <a href="/index.html#services">Services</a>
+        <a href="/index.html#new-patients">New Patients</a>
+        <a href="/index.html#policies">Policies</a>
+        <a href="/index.html#contact" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-extrabold">Owens Blog</h1>
+    <p class="mt-2 text-slate-600">Local photography, clinic updates, and practical mental‑health explainers. Short reads, clear takeaways.</p>
+
+    <div class="mt-6 flex flex-wrap items-center gap-2 text-xs">
+      <button data-tag="all" class="px-3 py-1 rounded-full border border-slate-200 bg-slate-50">All</button>
+      <button data-tag="community" class="px-3 py-1 rounded-full border border-slate-200">Community</button>
+      <button data-tag="wellness" class="px-3 py-1 rounded-full border border-slate-200">Wellness</button>
+      <button data-tag="adhd" class="px-3 py-1 rounded-full border border-slate-200">ADHD</button>
+      <button data-tag="behind" class="px-3 py-1 rounded-full border border-slate-200">Behind the Scenes</button>
+    </div>
+
+    <div id="posts" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm" data-tags="community behind">
+        <a href="/blog/market-street-at-dusk.html" class="block relative">
+          <img src="/images/corning1.jpg" alt="Market Street at dusk" class="w-full h-44 object-cover"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+        </a>
+        <div class="p-4">
+          <div class="text-xs text-slate-500">Oct 2025 · Community</div>
+          <h2 class="mt-1 font-semibold group-hover:underline">Market Street at Dusk — Why place matters for mental health</h2>
+          <p class="mt-2 text-sm text-slate-600">A quick walk in the glow of the Gaffer District isn’t therapy—but it sure is therapeutic. Here’s how we coach “micro‑reset” routines using real Corning locations.</p>
+          <a href="/blog/market-street-at-dusk.html" class="mt-3 inline-flex text-brand-700 hover:underline text-sm">Read article →</a>
+        </div>
+      </article>
+
+      <article class="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm" data-tags="adhd wellness">
+        <a href="/blog/adhd-first-visit-checklist.html" class="block relative">
+          <img src="/images/adhd.jpg" alt="ADHD planning" class="w-full h-44 object-cover"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+        </a>
+        <div class="p-4">
+          <div class="text-xs text-slate-500">Oct 2025 · ADHD</div>
+          <h2 class="mt-1 font-semibold group-hover:underline">ADHD: What to prepare for your first visit</h2>
+          <p class="mt-2 text-sm text-slate-600">Bring these 6 things to make your evaluation smoother, safer, and more useful. Includes a printable mini‑checklist.</p>
+          <a href="/blog/adhd-first-visit-checklist.html" class="mt-3 inline-flex text-brand-700 hover:underline text-sm">Read article →</a>
+        </div>
+      </article>
+
+      <article class="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm" data-tags="wellness behind">
+        <a href="/blog/gaffer-district-lights.html" class="block relative">
+          <img src="/images/corning3.jpg" alt="Gaffer District lights" class="w-full h-44 object-cover"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+        </a>
+        <div class="p-4">
+          <div class="text-xs text-slate-500">Oct 2025 · Behind the Scenes</div>
+          <h2 class="mt-1 font-semibold group-hover:underline">Behind the Shot: Gaffer District lights after rain</h2>
+          <p class="mt-2 text-sm text-slate-600">Gear, settings, and what a night photo has to do with nervous‑system regulation.</p>
+          <a href="/blog/gaffer-district-lights.html" class="mt-3 inline-flex text-brand-700 hover:underline text-sm">Read article →</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-10 text-xs text-slate-500">
+      <p>To add a post: copy <strong>post-template.html</strong> and drop it in <code>/blog/your-post.html</code>, then add a card above. Keep images under 300KB for speed.</p>
+    </div>
+  </main>
+
+  <footer class="py-10 border-t border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-slate-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+      <p>© <span id="year"></span> Owens Mental Health & Wellness. All rights reserved.</p>
+      <nav class="flex gap-4">
+        <a href="/">Home</a>
+        <a href="/index.html#fees">Fees</a>
+        <a href="/index.html#policies">Policies</a>
+        <a href="/index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      const buttons = Array.from(document.querySelectorAll('[data-tag]'));
+      const cards = Array.from(document.querySelectorAll('#posts article'));
+      function set(tag){
+        cards.forEach(c => {
+          const tags = (c.getAttribute('data-tags')||'').split(/\s+/);
+          c.style.display = (tag==='all' || tags.includes(tag)) ? '' : 'none';
+        });
+        buttons.forEach(b=>{
+          b.classList.toggle('bg-slate-50', b.dataset.tag!==tag);
+          b.classList.toggle('bg-brand-50', b.dataset.tag===tag);
+          b.classList.toggle('border-brand-200', b.dataset.tag===tag);
+        });
+      }
+      buttons.forEach(b=>b.addEventListener('click', ()=>set(b.dataset.tag)));
+      set('all');
+    })();
+  </script>
+</body>
+</html>
