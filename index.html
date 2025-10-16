@@ -1,3 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Owens Mental Health & Wellness | Community Psychiatry in Corning, NY</title>
+  <meta name="description" content="Telehealth-first community psychiatry & wellness in the Southern Tier. Lifespan care including ADHD evaluation and treatment. Compassionate, local, accessible." />
+  <meta property="og:title" content="Owens Mental Health & Wellness" />
+  <meta property="og:description" content="Telehealth-first community psychiatry & wellness in the Southern Tier." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://www.owenswellness.com/og-image.jpg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2ea685">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2ea685">
+  <meta name="theme-color" content="#2ea685">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f7fbfa', 100: '#eaf7f4', 200: '#c9eee3', 300: '#9dddc9', 400: '#57c0a1',
+              500: '#2ea685', 600: '#20876c', 700: '#1a6d59', 800: '#165747', 900: '#12483b'
+            },
+            ink: '#0f172a'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Smooth anchor scrolling */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white text-ink antialiased font-sans pb-20 sm:pb-0">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <img src="/images/logo.png" alt="Owens Mental Health & Wellness" class="w-8 h-8 rounded-xl object-cover hidden sm:block" onerror="this.style.display='none'"/>
+        <div class="w-8 h-8 rounded-xl bg-brand-500 sm:hidden"></div>
+        <span class="font-semibold tracking-tight">Owens Mental Health & Wellness</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-brand-600">Services</a>
+        <a href="#team" class="hover:text-brand-600">Team</a>
+        <a href="#new-patients" class="hover:text-brand-600">New Patients</a>
+        <a href="#fees" class="hover:text-brand-600">Fees & Insurance</a>
+        <a href="#policies" class="hover:text-brand-600">Policies</a>
+        <a href="#faq" class="hover:text-brand-600">FAQ</a>
+        <a href="#contact" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Contact</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <button id="menu-btn" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200 text-slate-700">
+        <span class="sr-only">Menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <!-- Mobile nav -->
+    <div id="mobile-nav" class="sm:hidden hidden border-t border-slate-100 bg-white/95 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 py-3 grid gap-2 text-sm">
+        <a href="#services" class="py-2">Services</a>
+        <a href="#team" class="py-2">Team</a>
+        <a href="#new-patients" class="py-2">New Patients</a>
+        <a href="#fees" class="py-2">Fees & Insurance</a>
+        <a href="#policies" class="py-2">Policies</a>
+        <a href="#faq" class="py-2">FAQ</a>
+        <a href="#contact" class="mt-1 inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-brand-600 text-white">Contact</a>
+        <a href="tel:+15555555555" class="mt-1 inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg border border-slate-200">Call now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Community Psychiatry, made <span class="text-brand-600">personal</span>.
+        </h1>
+        <p class="mt-4 text-lg text-slate-600">Evidence-based, telehealth-first mental health care for the Southern Tier. Lifespan care (children, adolescents, adults) including ADHD evaluation and treatment. We meet you where you are—with compassion, clarity, and practical plans. <span class="block mt-2 text-base">We’re excited to offer our psychiatric expertise to our <strong>Corning, NY</strong> community.</span></p>
+        <div class="mt-3 inline-flex items-center gap-2 rounded-full bg-brand-50 border border-brand-200 px-3 py-1 text-xs text-ink">
+          <span aria-hidden="true">🏡</span>
+          <span>Proudly serving Corning, NY & the Southern Tier</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-xl bg-brand-600 text-white hover:bg-brand-700 font-medium w-full sm:w-auto text-center">Request an Appointment</a>
+          <a href="#services" class="px-5 py-3 rounded-xl border border-slate-200 hover:border-brand-300 hover:text-brand-700 font-medium w-full sm:w-auto text-center">Explore Services</a>
+        </div>
+        <ul class="mt-6 text-sm text-slate-500 grid md:grid-cols-2 gap-y-2 list-disc pl-5">
+          <li>Across the lifespan (children, adolescents, adults)</li>
+          <li>Medication Management</li>
+          <li>Trauma‑informed, Veteran‑friendly</li>
+          <li>Telehealth across NY</li>
+        </ul>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-xl">
+          <img src="/images/hero.jpg" alt="Corning, NY landmark tower at night" class="w-full h-full object-cover will-change-transform" data-parallax data-speed="0.28" fetchpriority="high" decoding="async" width="1600" height="1200" />
+          <div class="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-transparent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Local Roots -->
   <section id="local-roots" class="py-14 bg-white">
@@ -21,7 +132,7 @@
           </div>
         </div>
         <div class="relative rounded-2xl overflow-hidden shadow-md border border-slate-100">
-          <img src="/images/hero.jpg" alt="Corning landmark at night" class="w-full h-full object-cover" />
+          <img src="/images/hero.jpg" alt="Corning landmark at night" class="w-full h-full object-cover" loading="lazy" decoding="async" width="1600" height="1200" />
           <div class="absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-transparent"></div>
         </div>
       </div>
@@ -57,8 +168,6 @@
         <!-- Watermark overlay -->
         <div id="carousel-watermark" class="pointer-events-none select-none absolute bottom-2 right-2 z-10 text-white/60 text-[10px] md:text-xs tracking-wide">© Owens</div>
       </div>
-
-      <p class="mt-3 text-xs text-slate-500">Tip: upload images into <code>/images/<\/code> and update the list above. You can also attach <code>"href"<\/code> to any item to make it a clickable post link (blog, article, or external).<\/p> The carousel will auto‑rotate, supports swipe, and pauses on hover.</p>
     </div>
   </section>
 
@@ -67,6 +176,7 @@
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-bold">Services</h2>
       <p class="mt-2 text-slate-600">Right‑sized care plans that fit real life. We start simple, measure what matters, and adjust together.</p>
+
       <div class="mt-8 grid md:grid-cols-3 gap-6">
         <div class="p-6 rounded-2xl bg-white shadow-sm border border-slate-100">
           <h3 class="font-semibold text-lg">Psychiatric Evaluation</h3>
@@ -122,10 +232,14 @@
   <section id="team" class="py-16">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-bold">Meet the Team</h2>
-      <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="mt-8 grid md:grid-cols-2 gap-6 items-start">
         <div class="p-6 rounded-2xl border border-slate-100">
           <h3 class="font-semibold">Dodi Owens, PMHNP-C, ANP-BC</h3>
           <p class="mt-2 text-sm text-slate-600">Board‑certified Psychiatric‑Mental Health Nurse Practitioner providing lifespan psychiatry (children, adolescents, adults) with a focus on practical, evidence‑based care. Services include comprehensive psychiatric evaluation, ADHD assessment and treatment, and medication management. Veteran‑friendly and trauma‑informed.</p>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden shadow-md border border-slate-100">
+          <img src="/images/dodi.jpg" alt="Photo of Dodi Owens, PMHNP-C, ANP-BC" class="w-full h-full object-cover" loading="lazy" decoding="async" width="1200" height="1500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
         </div>
       </div>
     </div>
@@ -324,6 +438,7 @@
       const prevBtn = root.querySelector('button[aria-label="Previous"]');
       const nextBtn = root.querySelector('button[aria-label="Next"]');
       const intervalMs = parseInt(root.dataset.autoplay || '7000', 10);
+      const prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       // Load gallery data from JSON
       let gallery = [];
@@ -337,24 +452,27 @@
 
       // Build slides
       const slides = gallery.map((item, idx) => {
+        const hasLink = !!item.href;
+        const wrapper = hasLink ? document.createElement('a') : document.createElement('div');
+        if (hasLink) { wrapper.href = item.href; wrapper.setAttribute('aria-label', item.caption || 'Open'); }
+        wrapper.className = 'absolute inset-0';
         const img = document.createElement('img');
         img.src = item.src;
         img.alt = item.caption || 'Corning, NY — local photography';
-        img.className = 'absolute inset-0 w-full h-[42vh] md:h-[55vh] object-cover transition-opacity duration-700 ease-out will-change-transform' + (idx === 0 ? ' opacity-100' : ' opacity-0');
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.className = 'w-full h-[42vh] md:h-[55vh] object-cover transition-opacity duration-700 ease-out will-change-transform' + (idx === 0 ? ' opacity-100' : ' opacity-0');
         img.setAttribute('data-parallax', '');
         img.setAttribute('data-speed', '0.18');
-        if (item.href) {
-          img.style.cursor = 'pointer';
-          img.addEventListener('click', () => { window.location.href = item.href; });
-        }
-        root.appendChild(img);
-        // dot
+        wrapper.appendChild(img);
+        if (!hasLink) { wrapper.setAttribute('role', 'img'); wrapper.setAttribute('aria-label', img.alt); wrapper.tabIndex = 0; }
+        root.appendChild(wrapper);
         const dot = document.createElement('button');
         dot.className = 'w-2.5 h-2.5 rounded-full border border-white/70 bg-white/40 hover:bg-white/80 focus:outline-none focus:ring-2 focus:ring-white/70';
         dot.setAttribute('aria-label', 'Go to slide ' + (idx+1));
         dotsWrap.appendChild(dot);
         dot.addEventListener('click', () => go(idx));
-        return img;
+        return wrapper;
       });
 
       const dots = Array.from(dotsWrap.children);
@@ -387,14 +505,14 @@
       if (watermarkEl) watermarkEl.textContent = '© Owens';
 
       let i = Math.floor(Math.random() * slides.length);
-      slides.forEach((s, idx) => s.style.opacity = idx === i ? '1' : '0');
+      slides.forEach((s, idx) => s.firstElementChild.style.opacity = idx === i ? '1' : '0');
       setDot(i); setCaption(i);
 
       let timerId = null;
-      function start() { stop(); timerId = setInterval(next, intervalMs); }
+      function start() { stop(); if (prefersReduce) return; timerId = setInterval(next, intervalMs); }
       function stop() { if (timerId) { clearInterval(timerId); timerId = null; } }
 
-      function go(n) { if (n === i) return; slides[i].style.opacity = '0'; i = (n + slides.length) % slides.length; slides[i].style.opacity = '1'; setDot(i); setCaption(i); }
+      function go(n) { if (n === i) return; slides[i].firstElementChild.style.opacity = '0'; i = (n + slides.length) % slides.length; slides[i].firstElementChild.style.opacity = '1'; setDot(i); setCaption(i); }
       function next() { go(i + 1); }
       function prev() { go(i - 1); }
 
@@ -423,7 +541,7 @@
     "@context": "https://schema.org",
     "@type": "MedicalOrganization",
     "name": "Owens Mental Health & Wellness",
-    "url": "https://example.netlify.app/",
+    "url": "http://www.owenswellness.com/",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Corning",
@@ -440,5 +558,57 @@
     }
   }
   </script>
+  <script>
+        // Mobile menu toggle
+    (function(){
+      const btn = document.getElementById('menu-btn');
+      const nav = document.getElementById('mobile-nav');
+      if (!btn || !nav) return;
+      function close(){ nav.classList.add('hidden'); btn.setAttribute('aria-expanded','false'); }
+      function toggle(){ const open = nav.classList.toggle('hidden'); btn.setAttribute('aria-expanded', String(!open)); }
+      btn.addEventListener('click', toggle);
+      // close when clicking a link
+      nav.addEventListener('click', (e)=>{ if(e.target.closest('a')) close(); });
+    })();
+  </script>
+
+  <!-- Mobile sticky CTA -->
+  <div id="mobile-cta" class="fixed inset-x-0 bottom-0 z-50 sm:hidden hidden translate-y-3 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="mx-auto max-w-6xl px-4 pb-[env(safe-area-inset-bottom)]">
+      <div class="m-3 rounded-2xl bg-brand-700 text-white shadow-lg flex items-center justify-between gap-3 px-4 py-3">
+        <span class="text-sm">Ready to get started?</span>
+        <a href="#contact" class="inline-flex items-center justify-center rounded-lg bg-white text-ink px-3 py-2 text-sm font-medium">Request appointment</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const bar = document.getElementById('mobile-cta');
+      if (!bar) return;
+      function revealByScroll(){
+        const max = (document.documentElement.scrollHeight - window.innerHeight) || 1;
+        const ratio = window.scrollY / max;
+        if (ratio > 0.25) {
+          bar.classList.remove('hidden','opacity-0','translate-y-3','pointer-events-none');
+          bar.classList.add('opacity-100','translate-y-0','pointer-events-auto');
+        } else {
+          bar.classList.add('opacity-0','translate-y-3','pointer-events-none');
+          bar.classList.remove('opacity-100','translate-y-0');
+        }
+      }
+      let ticking = false;
+      window.addEventListener('scroll', ()=>{
+        if (!ticking) {
+          requestAnimationFrame(()=>{ revealByScroll(); ticking=false; });
+          ticking = true;
+        }
+      }, {passive:true});
+      window.addEventListener('resize', revealByScroll);
+      // initial state (kept hidden until user scrolls)
+      revealByScroll();
+    })();
+  </script>
+
 </body>
 </html>
