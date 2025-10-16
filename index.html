@@ -22,7 +22,6 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/favicon.ico">
   <meta name="theme-color" content="#2ea685">
-  <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -39,76 +38,326 @@
       }
     }
   </script>
-  <style>
-    /* Smooth anchor scrolling */
-    html { scroll-behavior: smooth; }
-  </style>
+  <style>html{scroll-behavior:smooth}</style>
 </head>
 <body class="bg-[#FAF6EF] text-ink antialiased font-sans pb-20 sm:pb-0">
-
-  <!-- Top Bar -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-[#FAF6EF]/80 border-b border-slate-100">
-
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#home" class="flex items-center gap-2">
-        <img src="/images/logo.png" alt="Owens Mental Health & Wellness" class="w-12 h-12 md:w-16 md:h-16 rounded-2xl object-cover hidden sm:block shrink-0" onerror="this.style.display='none'"/>
-        <div class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-brand-500 sm:hidden shrink-0"></div>
-        <span class="font-semibold tracking-tight text-lg sm:text-xl md:text-2xl">Owens Mental Health & Wellness</span>
-      </a>
-      <nav class="hidden sm:flex items-center gap-6 text-sm">
-        <a href="#services" class="hover:text-brand-600">Services</a>
-        <a href="#team" class="hover:text-brand-600">Team</a>
-        <a href="#new-patients" class="hover:text-brand-600">New Patients</a>
-        <a href="#fees" class="hover:text-brand-600">Fees & Insurance</a>
-        <a href="#policies" class="hover:text-brand-600">Policies</a>
-        <a href="#faq" class="hover:text-brand-600">FAQ</a>
-        <a href="#contact" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Contact</a>
-      </nav>
-      <!-- Header social icons -->
-      <div class="hidden sm:flex items-center gap-4 text-slate-500">
-        <a href="#" aria-label="Instagram" class="hover:text-brand-700" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.5A2.5 2.5 0 1 0 12 17a2.5 2.5 0 0 0 0-5.5zM18 6.8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-        </a>
-        <a href="#" aria-label="Facebook" class="hover:text-brand-700" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M13 22v-7h2.5a1 1 0 0 0 1-1l.2-2H13V9.5c0-.6.5-1.5 1.5-1.5H17V6.1S15.7 6 14.3 6C11.9 6 10 7.7 10 9.9V12H8v2h2v8h3z"/></svg>
-        </a>
-        <a href="#" aria-label="TikTok" class="hover:text-brand-700" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M14 3c.3 2.2 1.7 3.9 4 4.2V10c-1.6-.1-3-.6-4-1.4V15a5 5 0 1 1-5-5c.3 0 .7 0 1 .1V12a3 3 0 1 0 3 3V3h1z"/></svg>
-        </a>
-      </div>
-
-      <!-- Mobile menu button -->
-      <button id="menu-btn" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200 text-slate-700">
-        <span class="sr-only">Menu</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
+<header class="sticky top-0 z-50 backdrop-blur bg-[#FAF6EF]/80 border-b border-slate-100">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <img src="/images/logo.png" alt="Owens Mental Health & Wellness" class="w-14 h-14 md:w-20 md:h-20 rounded-2xl object-cover hidden sm:block shrink-0" onerror="this.style.display='none'"/>
+      <div class="w-14 h-14 md:w-20 md:h-20 rounded-2xl bg-brand-500 sm:hidden shrink-0"></div>
+      <span class="font-semibold tracking-tight text-lg sm:text-xl md:text-2xl">Owens Mental Health & Wellness</span>
+    </a>
+    <nav class="hidden sm:flex items-center gap-6 text-sm">
+      <a href="#services" class="hover:text-brand-600">Services</a>
+      <a href="#team" class="hover:text-brand-600">Team</a>
+      <a href="#new-patients" class="hover:text-brand-600">New Patients</a>
+      <a href="#fees" class="hover:text-brand-600">Fees & Insurance</a>
+      <a href="#policies" class="hover:text-brand-600">Policies</a>
+      <a href="#faq" class="hover:text-brand-600">FAQ</a>
+      <a href="#contact" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Contact</a>
+    </nav>
+    <div class="hidden sm:flex items-center gap-4 text-slate-500">
+      <a href="#" aria-label="Instagram" class="hover:text-brand-700" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.5A2.5 2.5 0 1 0 12 17a2.5 2.5 0 0 0 0-5.5zM18 6.8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+      <a href="#" aria-label="Facebook" class="hover:text-brand-700" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M13 22v-7h2.5a1 1 0 0 0 1-1l.2-2H13V9.5c0-.6.5-1.5 1.5-1.5H17V6.1S15.7 6 14.3 6C11.9 6 10 7.7 10 9.9V12H8v2h2v8h3z"/></svg></a>
+      <a href="#" aria-label="TikTok" class="hover:text-brand-700" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M14 3c.3 2.2 1.7 3.9 4 4.2V10c-1.6-.1-3-.6-4-1.4V15a5 5 0 1 1-5-5c.3 0 .7 0 1 .1V12a3 3 0 1 0 3 3V3h1z"/></svg></a>
     </div>
-    <!-- Mobile nav -->
-    <div id="mobile-nav" class="sm:hidden hidden border-t border-slate-100 bg-[#FAF6EF]/95 backdrop-blur">
-      <div class="max-w-6xl mx-auto px-4 py-3 grid gap-2 text-sm">
-        <a href="#services" class="py-2">Services</a>
-        <a href="#team" class="py-2">Team</a>
-        <a href="#new-patients" class="py-2">New Patients</a>
-        <a href="#fees" class="py-2">Fees & Insurance</a>
-        <a href="#policies" class="py-2">Policies</a>
-        <a href="#faq" class="py-2">FAQ</a>
-        <a href="#contact" class="mt-1 inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-brand-600 text-white">Contact</a>
-        <a href="tel:+15555555555" class="mt-1 inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg border border-slate-200">Call now</a>
-        <div class="pt-3 flex items-center justify-center gap-6 text-slate-600">
-          <a href="#" aria-label="Instagram" class="hover:text-brand-700" target="_blank" rel="noopener">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 0 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.5A2.5 2.5 0 1 0 12 17a2.5 2.5 0 0 0 0-5.5zM18 6.8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-          </a>
-          <a href="#" aria-label="Facebook" class="hover:text-brand-700" target="_blank" rel="noopener">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M13 22v-7h2.5a1 1 0 0 0 1-1l.2-2H13V9.5c0-.6.5-1.5 1.5-1.5H17V6.1S15.7 6 14.3 6C11.9 6 10 7.7 10 9.9V12H8v2h2v8h3z"/></svg>
-          </a>
-          <a href="#" aria-label="TikTok" class="hover:text-brand-700" target="_blank" rel="noopener">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M14 3c.3 2.2 1.7 3.9 4 4.2V10c-1.6-.1-3-.6-4-1.4V15a5 5 0 1 1-5-5c.3 0 .7 0 1 .1V12a3 3 0 1 0 3 3V3h1z"/></svg>
-          </a>
+    <button id="menu-btn" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false" class="sm:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-200 text-slate-700"><span class="sr-only">Menu</span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  </div>
+  <div id="mobile-nav" class="sm:hidden hidden border-t border-slate-100 bg-[#FAF6EF]/95 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-3 grid gap-2 text-sm">
+      <a href="#services" class="py-2">Services</a>
+      <a href="#team" class="py-2">Team</a>
+      <a href="#new-patients" class="py-2">New Patients</a>
+      <a href="#fees" class="py-2">Fees & Insurance</a>
+      <a href="#policies" class="py-2">Policies</a>
+      <a href="#faq" class="py-2">FAQ</a>
+      <a href="#contact" class="mt-1 inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-brand-600 text-white">Contact</a>
+      <a href="tel:+15555555555" class="mt-1 inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg border border-slate-200">Call now</a>
+      <div class="pt-3 flex items-center justify-center gap-6 text-slate-600">
+        <a href="#" aria-label="Instagram" class="hover:text-brand-700" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 0 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.5A2.5 2.5 0 1 0 12 17a2.5 2.5 0 0 0 0-5.5zM18 6.8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+        <a href="#" aria-label="Facebook" class="hover:text-brand-700" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M13 22v-7h2.5a1 1 0 0 0 1-1l.2-2H13V9.5c0-.6.5-1.5 1.5-1.5H17V6.1S15.7 6 14.3 6C11.9 6 10 7.7 10 9.9V12H8v2h2v8h3z"/></svg></a>
+        <a href="#" aria-label="TikTok" class="hover:text-brand-700" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M14 3c.3 2.2 1.7 3.9 4 4.2V10c-1.6-.1-3-.6-4-1.4V15a5 5 0 1 1-5-5c.3 0 .7 0 1 .1V12a3 3 0 1 0 3 3V3h1z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Community Psychiatry, made <span class="text-brand-600">personal</span>.</h1>
+      <p class="mt-4 text-lg text-slate-600">Evidence-based, telehealth-first mental health care for the Southern Tier. Lifespan care (children, adolescents, adults) including ADHD evaluation and treatment. We meet you where you are—with compassion, clarity, and practical plans. <span class="block mt-2 text-base">We’re excited to offer our psychiatric expertise to our <strong>Corning, NY</strong> community.</span></p>
+      <div class="mt-3 inline-flex items-center gap-2 rounded-full bg-brand-50 border border-brand-200 px-3 py-1 text-xs text-ink"><span aria-hidden="true">🏡</span><span>Proudly serving Corning, NY & the Southern Tier</span></div>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="#contact" class="px-5 py-3 rounded-xl bg-brand-600 text-white hover:bg-brand-700 font-medium w-full sm:w-auto text-center">Request an Appointment</a>
+        <a href="#services" class="px-5 py-3 rounded-xl border border-slate-200 hover:border-brand-300 hover:text-brand-700 font-medium w-full sm:w-auto text-center">Explore Services</a>
+      </div>
+      <ul class="mt-6 text-sm text-slate-500 grid md:grid-cols-2 gap-y-2 list-disc pl-5"><li>Across the lifespan (children, adolescents, adults)</li><li>Medication Management</li><li>Trauma‑informed, Veteran‑friendly</li><li>Telehealth across NY</li></ul>
+    </div>
+    <div class="relative">
+      <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-xl">
+        <img src="/images/hero.jpg" alt="Corning, NY landmark tower at night" class="w-full h-full object-cover" fetchpriority="high" decoding="async" width="1600" height="1200" />
+        <div class="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-transparent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="local-roots" class="py-14 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-3 gap-6 items-stretch">
+      <div class="md:col-span-2 p-6 rounded-2xl border border-slate-100 bg-white">
+        <h2 class="text-2xl font-bold">Local Roots in <span class="text-brand-700">Corning, NY</span></h2>
+        <p class="mt-2 text-slate-600">From the <em>Gaffer District</em> to the footbridge and Market Street glow—this is home. We’re honored to offer compassionate, evidence‑based psychiatry to our Corning community and the wider Southern Tier.</p>
+        <ul class="mt-4 text-sm text-slate-700 list-disc pl-5 space-y-2">
+          <li><strong>Community‑first scheduling</strong> with after‑school/after‑work telehealth options.</li>
+          <li><strong>Coordination</strong> with local PCPs, therapists, and schools for seamless care.</li>
+          <li><strong>Clear, transparent pricing</strong> and help with out‑of‑network reimbursement.</li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-2 text-xs">
+          <span class="px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-ink">Proudly serving Corning & the Southern Tier</span>
+          <span class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-slate-700">Telehealth across New York</span>
+          <span class="px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-slate-700">Veteran‑friendly</span>
+        </div>
+        <div class="mt-6">
+          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Request an Appointment</a>
         </div>
       </div>
+      <div class="relative rounded-2xl overflow-hidden shadow-md border border-slate-100">
+        <img src="/images/corning1.jpg" alt="Corning landmark at night" class="w-full h-full object-cover" loading="lazy" decoding="async" width="1600" height="1200" />
+        <div class="absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-transparent"></div>
+      </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- Rest of the page unchanged ... -->
+<section id="gallery" class="py-14 bg-[#FAF6EF]">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex items-center justify-between gap-4">
+      <h2 class="text-2xl font-bold">Scenes from Corning</h2>
+      <p class="text-xs text-slate-500">All images by Owens — local places we love.</p>
+    </div>
+    <script id="gallery-data" type="application/json">[
+      {"src":"/images/corning1.jpg","caption":"Market Street at dusk","href":"/blog/market-street-at-dusk.html"},
+      {"src":"/images/corning2.jpg","caption":"Footbridge over the Chemung, morning fog"},
+      {"src":"/images/corning3.jpg","caption":"Gaffer District lights after rain","href":"/blog/gaffer-district-lights.html"},
+      {"src":"/images/corning4.jpg","caption":"Centerway Clocktower, golden hour"},
+      {"src":"/images/corning5.jpg","caption":"River reflections, long exposure","href":"/blog/river-reflections.html"}
+    ]</script>
+    <div class="mt-6 relative rounded-2xl overflow-hidden shadow-md border border-slate-100 group aspect-[16/9] md:aspect-[21/9]" id="carousel" data-autoplay="7000">
+      <button type="button" aria-label="Previous" class="absolute left-2 top-1/2 -translate-y-1/2 z-20 hidden md:inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 hover:bg-white backdrop-blur border border-slate-200 shadow">‹</button>
+      <button type="button" aria-label="Next" class="absolute right-2 top-1/2 -translate-y-1/2 z-20 hidden md:inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 hover:bg-white backdrop-blur border border-slate-200 shadow">›</button>
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2" id="carousel-dots"></div>
+      <div id="carousel-caption" class="absolute left-0 right-0 bottom-0 z-10 p-3 md:p-4 text-white text-xs md:text-sm bg-gradient-to-t from-black/60 via-black/20 to-transparent">
+        <a id="carousel-link" href="#" class="underline-offset-2 hover:underline"></a>
+      </div>
+      <div id="carousel-watermark" class="pointer-events-none select-none absolute bottom-2 right-2 z-10 text-white/60 text-[10px] md:text-xs tracking-wide">© Owens</div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-16 bg-[#FAF6EF]">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold">Services</h2>
+    <p class="mt-2 text-slate-600">Right‑sized care plans that fit real life. We start simple, measure what matters, and adjust together.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl bg-white shadow-sm border border-slate-100"><h3 class="font-semibold text-lg">Psychiatric Evaluation</h3><p class="mt-2 text-sm text-slate-600">Comprehensive intake to understand goals, history, and current symptoms. Clear next steps the same day.</p></div>
+      <div class="p-6 rounded-2xl bg-white shadow-sm border border-slate-100"><h3 class="font-semibold text-lg">Medication Management</h3><p class="mt-2 text-sm text-slate-600">Evidence‑based prescribing with safety monitoring and straightforward education.</p></div>
+      <div class="p-6 rounded-2xl bg-white shadow-sm border border-slate-100"><h3 class="font-semibold text-lg">Collaborative Care</h3><p class="mt-2 text-sm text-slate-600">We coordinate with PCPs, therapists, and schools to keep care coherent.</p></div>
+      <article class="p-6 rounded-2xl bg-white shadow-sm border border-slate-100 bg-white/70">
+        <h3 class="font-semibold">Conditions We Treat</h3>
+        <ul class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+          <li>ADHD</li><li>Depression</li><li>Anxiety</li><li>Mood disorders</li><li>Substance use disorders</li><li>PTSD & trauma‑related conditions</li><li>OCD (obsessive‑compulsive disorder)</li><li>Sleep concerns (e.g., insomnia)</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="new-patients" class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold">New Patients</h2>
+    <p class="mt-2 text-slate-600">A simple checklist to get you started. No PHI through the website—once we connect, we’ll send secure intake forms.</p>
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="p-6 rounded-2xl border border-slate-100 bg-white">
+        <h3 class="font-semibold">Before Your First Visit</h3>
+        <ul class="mt-3 text-sm text-slate-700 list-disc pl-5 space-y-2">
+          <li>Complete our secure intake packet (sent via HIPAA‑compliant link after you contact us).</li>
+          <li>Have a list of current medications, doses, and allergies.</li>
+          <li>Upload prior records (if available): recent notes, labs, or testing.</li>
+          <li>Choose a quiet, private space for telehealth; test camera, mic, and internet.</li>
+          <li>Have your photo ID and insurance card (front/back) ready.</li>
+          <li>For minors: a parent/guardian must attend the first visit and consent to treatment.</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl border border-slate-100 bg-white">
+        <h3 class="font-semibold">What We Treat</h3>
+        <p class="mt-2 text-sm text-slate-600">Evaluation and medication management across the lifespan (children, adolescents, adults):</p>
+        <ul class="mt-3 text-sm text-slate-700 list-disc pl-5 space-y-1">
+          <li>ADHD, anxiety disorders, depression</li>
+          <li>Trauma‑related conditions</li>
+          <li>Sleep concerns and mood regulation</li>
+        </ul>
+        <p class="mt-3 text-xs text-slate-500">We coordinate with therapists and primary care. Higher‑acuity needs may be referred to specialized services for safety and continuity.</p>
+      </div>
+    </div>
+    <div class="mt-8 p-5 rounded-2xl bg-brand-50 border border-brand-200">
+      <p class="text-sm text-ink"><strong>Urgent Safety Note:</strong> If you are experiencing thoughts of harming yourself or others, or a medical/psychiatric emergency, call <strong>911</strong> or go to the nearest emergency department. You may also call/text <strong>988</strong> for the Suicide & Crisis Lifeline.</p>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold">Meet the Team</h2>
+    <div class="mt-8 grid md:grid-cols-2 gap-6 items-start">
+      <div class="p-6 rounded-2xl border border-slate-100">
+        <h3 class="font-semibold">Dodi Owens, PMHNP-C, ANP-BC</h3>
+        <p class="mt-2 text-sm text-slate-600">Board‑certified Psychiatric‑Mental Health Nurse Practitioner providing lifespan psychiatry (children, adolescents, adults) with a focus on practical, evidence‑based care. Services include comprehensive psychiatric evaluation, ADHD assessment and treatment, and medication management. Veteran‑friendly and trauma‑informed.</p>
+      </div>
+      <div class="relative rounded-2xl overflow-hidden shadow-md border border-slate-100">
+        <img src="/images/dodi.jpg" alt="Photo of Dodi Owens, PMHNP-C, ANP-BC" class="w-full h-full object-cover" loading="lazy" decoding="async" width="1200" height="1500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fees" class="py-16 bg-[#FAF6EF]">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold">Fees & Insurance</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="p-6 rounded-2xl bg-white border border-slate-100">
+        <h3 class="font-semibold">Insurance</h3>
+        <p class="mt-2 text-sm text-slate-600">Actively credentialing with major plans in NY. Until confirmed, we can provide superbills for out‑of‑network reimbursement.</p>
+        <ul class="mt-3 text-sm text-slate-600 list-disc pl-5"><li>HSA/FSA accepted</li><li>Transparent pricing</li><li>No surprise billing</li></ul>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-slate-100">
+        <h3 class="font-semibold">Current Self‑Pay</h3>
+        <ul class="mt-2 text-sm text-slate-600 list-disc pl-5">
+          <li>Initial Evaluation (60–75 min): <strong>$300</strong></li>
+          <li>Follow‑up (25–30 min): <strong>$150</strong></li>
+          <li>Extended Follow‑up (45–50 min): <strong>$225</strong></li>
+        </ul>
+        <p class="mt-3 text-xs text-slate-500">Benchmarked to regional private psychiatry rates; subject to change as insurance contracting finalizes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="policies" class="py-16 bg-[#FAF6EF]">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold">Practice Policies</h2>
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="p-6 rounded-2xl bg-white border border-slate-100">
+        <h3 class="font-semibold">Scheduling & Cancellations</h3>
+        <ul class="mt-2 text-sm text-slate-700 list-disc pl-5 space-y-1">
+          <li>Please give <strong>24 business hours</strong> notice to cancel or reschedule.</li>
+          <li>No‑show/late‑cancel fees may apply to self‑pay and out‑of‑network care.</li>
+          <li>Telehealth: join 5 minutes early; after 10 minutes late, the visit may be rescheduled.</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-slate-100">
+        <h3 class="font-semibold">Medication & Refills</h3>
+        <ul class="mt-2 text-sm text-slate-700 list-disc pl-5 space-y-1">
+          <li>Refills are processed during business hours with up to <strong>2 business days</strong> turnaround.</li>
+          <li>Controlled substances require active follow‑up care and monitoring; early refills cannot be guaranteed.</li>
+          <li>Please request refills through your pharmacy or patient portal (when enabled).</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-slate-100">
+        <h3 class="font-semibold">Communication</h3>
+        <ul class="mt-2 text-sm text-slate-700 list-disc pl-5 space-y-1">
+          <li>Non‑urgent questions are answered within 1–2 business days.</li>
+          <li>Clinical questions may require a scheduled visit for safe care.</li>
+          <li>Do not use email for emergencies or PHI; use the portal once active.</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-slate-100">
+        <h3 class="font-semibold">Billing & Insurance</h3>
+        <ul class="mt-2 text-sm text-slate-700 list-disc pl-5 space-y-1">
+          <li>We are credentialing with NY plans; until confirmed, we provide superbills for out‑of‑network reimbursement.</li>
+          <li>HSA/FSA cards accepted; payment due at time of service.</li>
+          <li>Prior authorizations are completed when clinically appropriate.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 p-5 rounded-2xl bg-white border border-slate-200">
+      <h3 class="font-semibold">Informed Consent & Privacy</h3>
+      <p class="mt-2 text-sm text-slate-600">We provide consent and privacy documents electronically before your first visit. Telehealth services are delivered via HIPAA‑compliant platforms. We follow federal and New York State regulations for confidentiality and record keeping.</p>
+    </div>
+    <div class="mt-8 p-5 rounded-2xl bg-brand-50 border border-brand-200">
+      <p class="text-sm text-ink"><strong>Crisis Resources:</strong> Call or text <strong>988</strong> (Suicide & Crisis Lifeline), dial <strong>911</strong>, or go to the nearest emergency department for urgent concerns.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold">FAQ</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <details class="p-5 rounded-2xl border border-slate-200"><summary class="font-medium cursor-pointer">Do you offer telehealth?</summary><p class="mt-3 text-sm text-slate-600">Yes. Most visits are telehealth across NY with secure, HIPAA‑compliant video. In‑person visits are limited and scheduled as needed.</p></details>
+      <details class="p-5 rounded-2xl border border-slate-200"><summary class="font-medium cursor-pointer">Do you provide therapy?</summary><p class="mt-3 text-sm text-slate-600">Medication management is primary. We partner with local therapists and can coordinate referrals.</p></details>
+      <details class="p-5 rounded-2xl border border-slate-200"><summary class="font-medium cursor-pointer">Do you prescribe controlled substances?</summary><p class="mt-3 text-sm text-slate-600">When clinically appropriate and in alignment with NY and federal guidelines. We use treatment agreements and monitoring.</p></details>
+      <details class="p-5 rounded-2xl border border-slate-200"><summary class="font-medium cursor-pointer">How do I get started?</summary><p class="mt-3 text-sm text-slate-600">Use the contact form below. We’ll reply within 1–2 business days with scheduling options and next steps.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-16 bg-slate-900 text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl font-bold">Get in Touch</h2>
+        <p class="mt-2 text-slate-300">No PHI in this form, please. Tell us what you’re looking for and how to reach you. We’ll follow up to gather details securely.</p>
+        <div class="mt-6 space-y-2 text-slate-300">
+          <p><strong>Email:</strong> <a class="underline" href="mailto:info@owensmentalhealth.com">info@owensmentalhealth.com</a></p>
+          <p><strong>Phone:</strong> (555) 555‑5555</p>
+          <p><strong>Service Area:</strong> Telehealth across New York; based in Corning, NY.</p>
+        </div>
+      </div>
+      <form name="contact" method="POST" action="https://formsubmit.co/joeltowens@gmail.com" class="bg-white text-ink p-6 rounded-2xl shadow-md">
+        <input type="hidden" name="_subject" value="New inquiry from Owens Mental Health website" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_honey" value="" />
+        <input type="hidden" name="_next" value="/thank-you.html" />
+        <label for="name" class="block text-sm font-medium">Name</label>
+          <input id="name" required name="name" class="mt-1 w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-brand-400" />
+        </label>
+        <label for="email" class="block text-sm font-medium mt-4">Email</label>
+          <input id="email" required name="email" type="email" class="mt-1 w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-brand-400" />
+        </label>
+        <label for="message" class="block text-sm font-medium mt-4">Message (no PHI)</label>
+          <textarea id="message" required name="message" rows="4" class="mt-1 w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-brand-400" placeholder="Briefly describe how we can help."></textarea>
+        </label>
+        <button type="submit" class="mt-4 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Send</button>
+        <p class="mt-3 text-xs text-slate-500">Submitting this form does not establish a patient‑provider relationship. Do not share medical emergencies—call 911.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="py-10 border-t border-slate-100">
+  <div class="max-w-6xl mx-auto px-4 text-sm text-slate-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+    <p>© <span id="year"></span> Owens Mental Health & Wellness. All rights reserved.</p>
+    <nav class="flex gap-4">
+      <a href="#faq" class="hover:text-brand-700">FAQ</a>
+      <a href="#fees" class="hover:text-brand-700">Fees</a>
+      <a href="#new-patients" class="hover:text-brand-700">New Patients</a>
+      <a href="#policies" class="hover:text-brand-700">Policies</a>
+      <a href="#contact" class="hover:text-brand-700">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4 text-slate-500">
+      <a href="#" aria-label="Instagram" class="hover:text-brand-700" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.5A2.5 2.5 0 1 0 12 17a2.5 2.5 0 0 0 0-5.5zM18 6.8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+      <a href="#" aria-label="Facebook" class="hover:text-brand-700" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M13 22v-7h2.5a1 1 0 0 0 1-1l.2-2H13V9.5c0-.6.5-1.5 1.5-1.5H17V6.1S15.7 6 14.3 6C11.9 6 10 7.7 10 9.9V12H8v2h2v8h3z"/></svg></a>
+      <a href="#" aria-label="TikTok" class="hover:text-brand-700" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current"><path d="M14 3c.3 2.2 1.7 3.9 4 4.2V10c-1.6-.1-3-.6-4-1.4V15a5 5 0 1 1-5-5c.3 0 .7 0 1 .1V12a3 3 0 1 0 3 3V3h1z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const yEl = document.getElementById('year'); if (yEl) yEl.textContent = new Date().getFullYear();
+  (function(){const root=document.getElementById('carousel');if(!root)return;const dotsWrap=document.getElementById('carousel-dots');const captionEl=document.getElementById('carousel-caption');const linkEl=document.getElementById('carousel-link');const watermarkEl=document.getElementById('carousel-watermark');const prevBtn=root.querySelector('button[aria-label="Previous"]');const nextBtn=root.querySelector('button[aria-label="Next"]');const intervalMs=parseInt(root.dataset.autoplay||'7000',10);const prefersReduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;let gallery=[];try{const raw=document.getElementById('gallery-data');if(raw&&raw.textContent.trim())gallery=JSON.parse(raw.textContent.trim());}catch(e){}if(!gallery.length){gallery=['/images/corning1.jpg','/images/corning2.jpg','/images/corning3.jpg'].map((src,i)=>({src,caption:'Corning photo #'+(i+1)}));}const slides=gallery.map((item,idx)=>{const hasLink=!!item.href;const wrapper=hasLink?document.createElement('a'):document.createElement('div');if(hasLink){wrapper.href=item.href;wrapper.setAttribute('aria-label',item.caption||'Open');}wrapper.className='absolute inset-0';const img=document.createElement('img');img.src=item.src;img.alt=item.caption||'Corning, NY — local photography';img.loading='lazy';img.decoding='async';img.className='w-full h-full object-cover transition-opacity duration-700 ease-out'+(idx===0?' opacity-100':' opacity-0');wrapper.appendChild(img);if(!hasLink){wrapper.setAttribute('role','img');wrapper.setAttribute('aria-label',img.alt);wrapper.tabIndex=0;}root.appendChild(wrapper);const dot=document.createElement('button');dot.className='w-2.5 h-2.5 rounded-full border border-white/70 bg-white/40 hover:bg-white/80 focus:outline-none focus:ring-2 focus:ring-white/70';dot.setAttribute('aria-label','Go to slide '+(idx+1));dotsWrap.appendChild(dot);dot.addEventListener('click',()=>go(idx));return wrapper;});const dots=Array.from(dotsWrap.children);function setDot(i){dots.forEach((d,idx)=>{d.style.transform=idx===i?'scale(1.3)':'scale(1)';d.style.background=idx===i?'white':'rgba(255,255,255,0.4)';});}function setCaption(i){const item=gallery[i];if(!captionEl)return;const text=item.caption||'';if(item.href&&linkEl){linkEl.textContent=text+' — Read article →';linkEl.href=item.href;linkEl.style.pointerEvents='auto';linkEl.style.textDecoration='';}else if(linkEl){linkEl.textContent=text;linkEl.removeAttribute('href');linkEl.style.pointerEvents='none';linkEl.style.textDecoration='none';}else{captionEl.textContent=text;}}if(watermarkEl)watermarkEl.textContent='© Owens';let i=Math.floor(Math.random()*slides.length);slides.forEach((s,idx)=>s.firstElementChild.style.opacity=idx===i?'1':'0');setDot(i);setCaption(i);let timerId=null;function start(){stop();if(prefersReduce)return;timerId=setInterval(next,intervalMs);}function stop(){if(timerId){clearInterval(timerId);timerId=null;}}function go(n){if(n===i)return;slides[i].firstElementChild.style.opacity='0';i=(n+slides.length)%slides.length;slides[i].firstElementChild.style.opacity='1';setDot(i);setCaption(i);}function next(){go(i+1);}function prev(){go(i-1);}nextBtn.addEventListener('click',next);prevBtn.addEventListener('click',prev);root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',start);let touchX=null;root.addEventListener('touchstart',e=>{touchX=e.touches[0].clientX;},{passive:true});root.addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;if(Math.abs(dx)>40){dx<0?next():prev();}touchX=null;},{passive:true});document.addEventListener('visibilitychange',()=>{document.hidden?stop():start();});start();})();(function(){const btn=document.getElementById('menu-btn');const nav=document.getElementById('mobile-nav');if(!btn||!nav)return;function close(){nav.classList.add('hidden');btn.setAttribute('aria-expanded','false');}function toggle(){const open=nav.classList.toggle('hidden');btn.setAttribute('aria-expanded',String(!open));}btn.addEventListener('click',toggle);nav.addEventListener('click',(e)=>{if(e.target.closest('a')) close();});})();</script>
 </body>
 </html>
